@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "revision": 1,
+  "courses": {
+    "cmu:fall-2026:15-112:all": {
+      "revision": 1,
+      "path": "courses/cmu/fall-2026/15-112.json"
+    },
+    "cmu:fall-2026:33-151:all": {
+      "revision": 1,
+      "path": "courses/cmu/fall-2026/33-151.json"
+    }
+  }
+}

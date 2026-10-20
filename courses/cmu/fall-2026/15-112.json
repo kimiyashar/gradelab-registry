@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "courseKey": "cmu:fall-2026:15-112:all",
+  "institution": "cmu",
+  "term": "fall-2026",
+  "courseCode": "15-112",
+  "title": "Fundamentals of Programming and Computer Science",
+  "revision": 1,
+  "status": "published",
+  "gradingModel": "weighted",
+  "categories": [
+    {
+      "name": "Competencies",
+      "weight": 0,
+      "aliases": [
+        "Comps",
+        "Competency"
+      ]
+    },
+    {
+      "name": "Attendance",
+      "weight": 5
+    },
+    {
+      "name": "Preps",
+      "weight": 5,
+      "aliases": [
+        "Prep"
+      ],
+      "rules": {
+        "halfWeightLowest": 2
+      }
+    },
+    {
+      "name": "Labs",
+      "weight": 5,
+      "aliases": [
+        "Lab"
+      ],
+      "rules": {
+        "halfWeightLowest": 2
+      }
+    },
+    {
+      "name": "Homeworks",
+      "weight": 10,
+      "aliases": [
+        "Homework",
+        "HW"
+      ],
+      "rules": {
+        "halfWeightLowest": 2
+      }
+    },
+    {
+      "name": "Quizzes",
+      "weight": 15,
+      "aliases": [
+        "Quiz"
+      ],
+      "rules": {
+        "halfWeightLowest": 2
+      }
+    },
+    {
+      "name": "Midterms",
+      "weight": 35,
+      "aliases": [
+        "Midterm",
+        "Exams"
+      ],
+      "rules": {
+        "halfWeightLowest": 1
+      }
+    },
+    {
+      "name": "Term Project",
+      "weight": 5,
+      "aliases": [
+        "Project"
+      ]
+    },
+    {
+      "name": "Final Exam",
+      "weight": 20,
+      "aliases": [
+        "Final"
+      ]
+    },
+    {
+      "name": "Other",
+      "weight": 0
+    }
+  ],
+  "rules": [
+    "Competencies are a pass requirement.",
+    "The lowest two Preps, Labs, Homeworks, and Quizzes are half-weighted.",
+    "The lowest midterm is half-weighted."
+  ],
+  "sources": [
+    {
+      "type": "official-syllabus",
+      "url": "https://www.cs.cmu.edu/~112/syllabus.html#grading"
+    }
+  ],
+  "verifiedAt": "2026-10-20",
+  "notes": "Personalized curved and adjusted values still come directly from the authenticated official 15-112 gradebook."
+}

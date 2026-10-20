@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "courseKey": "cmu:fall-2026:33-151:all",
+  "institution": "cmu",
+  "term": "fall-2026",
+  "courseCode": "33-151",
+  "title": "Matter and Interactions I",
+  "revision": 1,
+  "status": "published",
+  "gradingModel": "weighted",
+  "categories": [
+    {
+      "name": "Problem set turn-in",
+      "weight": 5,
+      "aliases": [
+        "Problem sets",
+        "Homework"
+      ]
+    },
+    {
+      "name": "Programs/labs",
+      "weight": 15,
+      "aliases": [
+        "Programs",
+        "Labs"
+      ]
+    },
+    {
+      "name": "Homework quizzes",
+      "weight": 25,
+      "aliases": [
+        "Quizzes"
+      ]
+    },
+    {
+      "name": "Project",
+      "weight": 10
+    },
+    {
+      "name": "Midterm 1",
+      "weight": 10,
+      "aliases": [
+        "Exam 1"
+      ]
+    },
+    {
+      "name": "Midterm 2",
+      "weight": 10,
+      "aliases": [
+        "Exam 2"
+      ]
+    },
+    {
+      "name": "Midterm 3",
+      "weight": 10,
+      "aliases": [
+        "Exam 3"
+      ]
+    },
+    {
+      "name": "Final exam",
+      "weight": 20,
+      "aliases": [
+        "Final"
+      ]
+    },
+    {
+      "name": "Attendance",
+      "weight": 5,
+      "aliases": [
+        "Lecture attendance",
+        "Recitation attendance"
+      ]
+    },
+    {
+      "name": "Other",
+      "weight": 0
+    }
+  ],
+  "rules": [
+    "Final weights total 110%; the lowest eligible starred 10% component is dropped.",
+    "If the final exam is the lowest eligible component, half of its 20% contribution is dropped."
+  ],
+  "sources": [
+    {
+      "type": "official-syllabus-pdf",
+      "url": "https://canvas.cmu.edu/courses/55149/files/14694540"
+    }
+  ],
+  "verifiedAt": "2026-10-20",
+  "notes": "The official final-course weighting table is used rather than the midsemester table."
+}
