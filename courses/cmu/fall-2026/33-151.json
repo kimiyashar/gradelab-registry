@@ -5,7 +5,7 @@
   "term": "fall-2026",
   "courseCode": "33-151",
   "title": "Matter and Interactions I",
-  "revision": 2,
+  "revision": 3,
   "status": "published",
   "gradingModel": "weighted",
   "categories": [
@@ -77,10 +77,7 @@
       "weight": 0
     }
   ],
-  "rules": [
-    "Final weights total 110%; the lowest eligible starred 10% component is dropped.",
-    "If the final exam is the lowest eligible component, half of its 20% contribution is dropped."
-  ],
+  "rules": [],
   "calculationRules": [
     {
       "type": "drop-lowest-category",
@@ -92,7 +89,7 @@
         { "category": "Midterm 3", "weightReduction": 10 },
         { "category": "Final exam", "weightReduction": 10 }
       ],
-      "description": "The lowest eligible starred 10% component is dropped; if that is the final exam, half of its 20% contribution is removed."
+      "description": "Final weights total 110%. The lowest eligible starred 10% component is dropped; if that is the final exam, half of its 20% contribution is removed."
     }
   ],
   "sources": [
