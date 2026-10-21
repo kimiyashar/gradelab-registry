@@ -28,6 +28,21 @@ for (const [key, entry] of Object.entries(index.courses || {})) {
     if (!name || names.has(name) || !Number.isFinite(category.weight) || category.weight < 0) fail(`Invalid category for ${key}`);
     names.add(name);
   }
+  for (const rule of definition.calculationRules || []) {
+    if (rule.type !== 'drop-lowest-category' || !Number.isInteger(rule.count) || rule.count < 1) fail(`Invalid calculation rule for ${key}`);
+    if (!Array.isArray(rule.candidates) || rule.candidates.length < rule.count) fail(`Missing calculation rule candidates for ${key}`);
+    const candidateNames = new Set();
+    for (const candidate of rule.candidates) {
+      const name = normalized(candidate.category || '');
+      const category = definition.categories.find((item) => normalized(item.name || '') === name);
+      if (!category || candidateNames.has(name)) fail(`Invalid calculation rule candidate for ${key}`);
+      candidateNames.add(name);
+      if (candidate.weightReduction !== undefined
+        && (!Number.isFinite(candidate.weightReduction) || candidate.weightReduction <= 0 || candidate.weightReduction > category.weight)) {
+        fail(`Invalid calculation rule weight reduction for ${key}`);
+      }
+    }
+  }
   if (!Array.isArray(definition.sources) || !definition.sources.length || definition.sources.some((source) => !String(source.url || '').startsWith('https://'))) fail(`Invalid official source for ${key}`);
 }
 console.log(`Validated ${Object.keys(index.courses).length} published GradeLab course definitions at registry revision ${index.revision}.`);

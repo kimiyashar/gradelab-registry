@@ -89,6 +89,32 @@
         "type": "string"
       }
     },
+    "calculationRules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "count", "candidates"],
+        "properties": {
+          "type": { "const": "drop-lowest-category" },
+          "count": { "type": "integer", "minimum": 1 },
+          "description": { "type": "string" },
+          "candidates": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["category"],
+              "properties": {
+                "category": { "type": "string" },
+                "weightReduction": { "type": "number", "exclusiveMinimum": 0 }
+              }
+            }
+          }
+        }
+      }
+    },
     "sources": {
       "type": "array",
       "minItems": 1,

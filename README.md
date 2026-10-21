@@ -1,6 +1,6 @@
 # GradeLab shared class registry
 
-This public, moderated registry stores reusable **class-wide grading definitions** for GradeLab. A correction is published once and can then benefit every current and future student in that specific course and term.
+This public, moderated registry stores reusable **class-wide grading definitions** for GradeLab. A correction is published once and can then benefit every current and future student in that specific course and term. Supported declarative calculation rules, such as dropping the lowest eligible category, are executed locally by GradeLab and displayed in the right-hand grade guide.
 
 ## Privacy boundary
 
